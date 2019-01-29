@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editImie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Imię"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="51dp" />
+
+        <EditText
+            android:id="@+id/editNazwisko"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+
+            android:hint="Nazwisko"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="133dp" />
+
+        <EditText
+            android:id="@+id/editNumer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:ems="10"
+            android:inputType="phone"
+
+            android:hint="Numer kontaktowy"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="218dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonOkay"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:onClick="dodaj"
+                android:text="Dodaj kontakt"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="412dp" />
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:onClick="powrot"
+                android:text="Powrót"
+                tools:layout_editor_absoluteX="218dp"
+                tools:layout_editor_absoluteY="434dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
